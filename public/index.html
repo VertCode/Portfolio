@@ -1,0 +1,155 @@
+<!--
+  __  __           _        ____
+ |  \/  |         | |      |  _ \
+ | \  / | __ _  __| | ___  | |_) |_   _
+ | |\/| |/ _` |/ _` |/ _ \ |  _ <| | | |
+ | |  | | (_| | (_| |  __/ | |_) | |_| |
+ |_|  |_|\__,_|\__,_|\___| |____/ \__, |
+                                   __/ |
+ __          __       _           |___/__                 _
+ \ \        / /      | |            |  _ \               | |
+  \ \  /\  / /__  ___| | ___ _   _  | |_) |_ __ ___ _   _| | _____ _ __ ___
+   \ \/  \/ / _ \/ __| |/ _ \ | | | |  _ <| '__/ _ \ | | | |/ / _ \ '__/ __|
+    \  /\  /  __/\__ \ |  __/ |_| | | |_) | | |  __/ |_| |   <  __/ |  \__ \
+     \/  \/ \___||___/_|\___|\__, | |____/|_|  \___|\__,_|_|\_\___|_|  |___/
+                              __/ |
+                             |___/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wesley Breukers</title>
+
+    <link rel="stylesheet" href="./src/css/hamburger.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="./src/img/logo/vertcode-logo.png" alt="vc-logo">
+            </div>
+            <div class="right">
+                <button class="hamburger hamburger--collapse-r" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home-section">
+            <div class="container">
+                <h1>Welcome To My Portfolio</h1>
+                <h2>I'm Wesley Breukers</h2>
+                <p>I'm a Software Developer who loves backend development.</p>
+            </div>
+        </section>
+        <section id="about-section" class="style-1">
+            <div class="text-center section-header">
+                <h3>About</h3>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column-4">
+                        <h4>Hello!</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat tempus odio vel sodales. Aenean eros ligula, mollis quis feugiat a, semper ut diam. Suspendisse vulputate arcu a dignissim maximus. Integer varius pharetra vestibulum. In tincidunt ultrices tortor, sit amet efficitur nisi. Etiam pretium, nisi sit amet tincidunt pharetra, lacus lorem dapibus odio, tincidunt mattis nunc magna eget dolor. Cras non eros ut est suscipit iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In malesuada risus sed libero pharetra, vitae laoreet turpis iaculis. Sed elementum massa vel accumsan consectetur. Vivamus ultricies eros justo, quis aliquet mi interdum in.</p>
+                    </div>
+                    <div class="column-3 empty-col"></div>
+                    <div class="column-4">
+                        <h4>Skillset</h4>
+                        <ul class="skillset-items">
+                           <li><p><i class="devicon-java-plain"></i>Java</p></li>
+                           <li><p><i class="devicon-javascript-plain"></i>JavaScript</p></li>
+                            <li><p><i class="devicon-php-plain"></i>PHP</p></li>
+                            <li><p><i class="devicon-spring-plain"></i>Spring Boot</p></li>
+                            <li><p><i class="devicon-nodejs-plain"></i>Node.JS</p></li>
+                            <li><p><i class="devicon-express-original"></i>Express JS</p></li>
+                            <li><p><i class="devicon-mongodb-plain"></i>MongoDB</p></li>
+                            <li><p><i class="devicon-mysql-plain"></i>MySQL</p></li>
+                            <li><p><i class="devicon-git-plain"></i>GIT</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects-section">
+            <div class="text-center section-header">
+                <h3>Projects</h3>
+                <hr>
+                <div class="projects">
+                    <div class="project">
+                        <img src="./src/img/projects/orbit-preview.png" alt="OrbitClient Image">
+                        <h3>OrbitClient</h3>
+                        <p>OrbitClient is a paid Minecraft Faction client. Where I made the <strong>backend</strong> (Spring boot), <strong>client</strong> (Java, Forge Mod) and the <strong>discord bots</strong> (Discord.JS and Java Discord API)</p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://orbitclient.com"><i class="fas fa-globe"></i>Website</a>
+                            <a class="project-link" href="https://discord.gg/orbit"><i class="fab fa-discord"></i>Discord</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="./src/img/projects/orbit-preview.png" alt="OrbitClient Image">
+                        <h3>BridgePigeon</h3>
+                        <p>Coming Soon</p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://orbitclient.com"><i class="fas fa-globe"></i>Website</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="./src/img/projects/orbit-preview.png" alt="OrbitClient Image">
+                        <h3>HexaCDN</h3>
+                        <p>HexaCDN is a website that makes sharing files & redirecting urls easy.</p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://orbitclient.com"><i class="fas fa-globe"></i>Website</a>
+                            <a class="project-link" href="https://orbitclient.com"><i class="fab fa-github"></i>Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-section" class="style-1">
+            <div class="text-center section-header">
+                <h3>Contact</h3>
+                <hr>
+            </div>
+            <div class="center">
+                <div class="contact-form">
+                    <form action="contact" onsubmit="return submitForm(this)" enctype="multipart/form-data" method="post">
+                        <label>Full Name:</label>
+                        <input type="text" name="fullName" placeholder="Your Name">
+                        <label>E-Mail:</label>
+                        <input type="email" name="email" placeholder="Your E-mail">
+                        <label>Subject:</label>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <label>Message:</label>
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Submit" id="send-button">
+                    </form>
+                    <div class="messages">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>&copy; Copyright 2021. Made by Wesley Breukers</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/js/nav-bar.js"></script>
+    <script src="src/js/form.js"></script>
+    <script src="./src/js/hamburger.js"></script>
+</body>
+</html>
