@@ -42,7 +42,6 @@ function check() {
 
         for (let i = 0; i < menuItems.length; i++) {
             let menuItem = menuItems[i];
-            console.log(menuItem.attributes.href.value + ":" + id);
             if (menuItem.attributes.href.value.replace("#", "") === id)
                 menuItem.classList.add("active");
             else if (menuItem.classList.contains("active"))
