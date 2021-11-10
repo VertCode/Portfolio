@@ -15,36 +15,42 @@
                               __/ |
                              |___/
 */
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav ul li");
+const topMenu = $("nav ul li");
+const topMenuHeight = topMenu.outerHeight() + 15;
+const menuItems = topMenu.find("a");
+const scrollItems = menuItems.map(function () {
+    const item = $($(this).attr("href"));
+    if (item.length) {
+        return item;
+    }
+});
 
 check();
 
 function check() {
-    document.querySelectorAll('header').forEach(value => {
-        value.style.background = !$(window).scrollTop ? "rgb(0, 0, 0)" : "rgba(0, 0, 0, 0.80)";
-    })
+    $(window).scroll(function () {
+        const fromTop = $(this).scrollTop() + topMenuHeight;
 
-    let current = "";
+        let cur = scrollItems.map(function () {
+            if ($(this).offset().top < fromTop + 7)
+                return this;
+        });
 
-    for (let i = 0; i < sections.length; i++) {
-        let section = sections[i];
-        const sectionTop = section.offsetTop;
-        const sectionMiddle = sectionTop - (section.offsetHeight / 2);
 
-        if (pageYOffset >= sectionMiddle) {
-            current = section.getAttribute("id");
+        cur = cur[cur.length - 1];
+        const id = cur && cur.length ? cur[0].id : "";
+
+        for (let i = 0; i < menuItems.length; i++) {
+            let menuItem = menuItems[i];
+            console.log(menuItem.attributes.href.value + ":" + id);
+            if (menuItem.attributes.href.value.replace("#", "") === id)
+                menuItem.classList.add("active");
+            else if (menuItem.classList.contains("active"))
+                menuItem.classList.remove("active")
         }
-    }
 
-    navLi.forEach((li) => {
-        li.firstChild.classList.remove("active");
-        if (li.firstChild.attributes.href.value.includes(current)) {
-            li.firstChild.classList.add("active");
-        }
     });
 }
-
 
 $('nav ul').click(function () {
     if ($('header').hasClass("is-active")) {
