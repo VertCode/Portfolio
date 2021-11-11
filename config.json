@@ -1,0 +1,10 @@
+{
+  "mail": {
+    "host": "host",
+    "port": 465,
+    "auth": {
+      "user": "user",
+      "pass": "password"
+    }
+  }
+}
